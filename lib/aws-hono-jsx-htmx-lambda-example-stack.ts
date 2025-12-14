@@ -72,6 +72,7 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
                 ],
                 resources: [
                   todoTable.tableArn,
+                  `${todoTable.tableArn}/*`,
                 ],
                 effect: iam.Effect.ALLOW,
               }),
