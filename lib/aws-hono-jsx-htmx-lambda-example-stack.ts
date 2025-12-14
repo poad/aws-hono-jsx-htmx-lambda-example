@@ -59,8 +59,27 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
         assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
         managedPolicies: [
           iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole'),
-          iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonDynamoDBFullAccess'),
         ],
+        inlinePolicies: {
+          'DynamoDBAccessPolicy': new iam.PolicyDocument({
+            statements: [
+              new iam.PolicyStatement({
+                actions: [
+                  'dynamodb:PutItem',
+                  'dynamodb:Scan',
+                  'dynamodb:DeleteItem',
+                  'dynamodb:GetItem',
+                  'dynamodb:Query',
+                ],
+                resources: [
+                  todoTable.tableArn,
+                  `${todoTable.tableArn}/*`,
+                ],
+                effect: iam.Effect.ALLOW,
+              }),
+            ],
+          }),
+        },
       }),
       logGroup,
     });
