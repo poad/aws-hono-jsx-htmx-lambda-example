@@ -27,18 +27,6 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
       retention: logs.RetentionDays.ONE_DAY,
     });
 
-    const devOptions = {
-      environment: {
-        NODE_OPTIONS: '--enable-source-maps',
-      },
-      bundling: {
-        sourceMap: true,
-        sourceMapMode: nodejs.SourceMapMode.BOTH,
-        sourcesContent: true,
-        keepNames: true,
-      },
-    };
-
     const fn = new nodejs.NodejsFunction(this, 'Lambda', {
       runtime: lambda.Runtime.NODEJS_24_X,
       architecture: lambda.Architecture.ARM_64,
@@ -46,13 +34,13 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
       functionName,
       retryAttempts: 0,
       environment: {
-        ...devOptions.environment,
         TABLE_NAME: todoTable.tableName,
       },
       bundling: {
         minify: true,
+        sourceMap: false,
+        keepNames: false,
         format: nodejs.OutputFormat.ESM,
-        ...devOptions.bundling,
       },
       role: new iam.Role(this, 'Role', {
         roleName: `${functionName}-role`,
