@@ -1,10 +1,14 @@
 # Example by Hono/htmx/AWS Lambda/DynamoDB
 
-This is an example project demonstrating the use of [Hono](https://hono.dev/), [htmx](https://htmx.org/), AWS Lambda, and DynamoDB. It uses the AWS Cloud Development Kit (CDK) to define cloud infrastructure in code and provision it through AWS CloudFormation.
+This is an example project demonstrating the use of [Hono](https://hono.dev/),
+[htmx](https://htmx.org/), AWS Lambda, and DynamoDB.
+It uses the AWS Cloud Development Kit (CDK) to define cloud infrastructure
+in code and provision it through AWS CloudFormation.
 
 ## Deploy
 
-To deploy this example, ensure you have the AWS CDK installed and configured. Then, run the following commands:
+To deploy this example, ensure you have the AWS CDK installed and configured.
+Then, run the following commands:
 
 ```bash
 pnpm install
@@ -20,11 +24,11 @@ This example provisions the following AWS resources:
 
 | Resource | Type | Name |
 | -------- | ---- | ---- |
-| CDK Stack | AWS CloudFormation | aws-hono-jsx-htmx-lambda-example-stack |
-| Lambda Function | AWS Lambda | aws-hono-jsx-htmx-lambda |
-| DynamoDB Table | Amazon DynamoDB | ws-hono-jsx-htmx-lambda-example-todo |
-| IAM Role | AWS Identity and Access Management (IAM) | HonoHtmxLambdaRole |
-| CloudWatch Log Group | Amazon CloudWatch | /aws/lambda/aws-hono-jsx-htmx-lambda |
+| CDK Stack | AWS CloudFormation | `aws-hono-jsx-htmx-lambda-example-stack` |
+| Lambda Function | AWS Lambda | `aws-hono-jsx-htmx-lambda` |
+| DynamoDB Table | Amazon DynamoDB | `aws-hono-jsx-htmx-lambda-example-todo` |
+| IAM Role | AWS Identity and Access Management (IAM) | `aws-hono-jsx-htmx-lambda-role` |
+| CloudWatch Log Group | Amazon CloudWatch | `/aws/lambda/aws-hono-jsx-htmx-lambda` |
 | Lambda Function URL | AWS Lambda | aws-hono-jsx-htmx-lambda Function URL |
 
 ## Clean Up
@@ -41,4 +45,5 @@ npx -y aws-cdk@latest destroy -f
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
