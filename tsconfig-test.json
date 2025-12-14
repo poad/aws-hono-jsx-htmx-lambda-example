@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "noEmit": true
+  },
+  "include": [
+    "bin",
+    "lambda",
+    "lib",
+    "test",
+    "vitest.config.ts",
+    "eslint.config.ts"
+  ]
+}
