@@ -69,6 +69,7 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
                   'dynamodb:Scan',
                   'dynamodb:DeleteItem',
                   'dynamodb:GetItem',
+                  'dynamodb:Query',
                 ],
                 resources: [
                   todoTable.tableArn,
