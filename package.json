@@ -43,7 +43,7 @@
     "@hono/zod-validator": "^0.7.6",
     "aws-cdk-lib": "2.233.0",
     "constructs": "^10.4.4",
-    "hono": "^4.11.1",
+    "hono": "^4.11.2",
     "uuid": "^13.0.0",
     "zod": "^4.2.1"
   },
