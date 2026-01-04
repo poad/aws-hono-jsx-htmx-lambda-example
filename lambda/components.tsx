@@ -16,6 +16,7 @@ export const renderer = jsxRenderer(({ children }) => {
         <div class="p-4">
           <h1 class="text-4xl font-bold mb-4"><a href="/">Todo</a></h1>
           ${children}
+          <div> class="mx-auto"<a href="https://github.com/poad/aws-hono-jsx-htmx-lambda-example">Source Code</a></div>
         </div>
       </body>
     </html>
