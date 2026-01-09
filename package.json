@@ -41,7 +41,7 @@
     "@aws-sdk/lib-dynamodb": "^3.965.0",
     "@aws-sdk/util-dynamodb": "^3.965.0",
     "@hono/zod-validator": "^0.7.6",
-    "aws-cdk-lib": "2.233.0",
+    "aws-cdk-lib": "2.234.0",
     "constructs": "^10.4.4",
     "hono": "^4.11.3",
     "uuid": "^13.0.0",
