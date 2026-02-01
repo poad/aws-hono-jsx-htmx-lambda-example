@@ -15,8 +15,8 @@
     "lint-fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.1",
-    "@eslint/core": "^1.0.1",
+    "@eslint/compat": "^2.0.2",
+    "@eslint/core": "^1.1.0",
     "@eslint/js": "^9.39.2",
     "@stylistic/eslint-plugin": "^5.7.1",
     "@types/aws-lambda": "^8.10.160",
@@ -37,9 +37,9 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.30.2",
-    "@aws-sdk/client-dynamodb": "^3.978.0",
-    "@aws-sdk/lib-dynamodb": "^3.978.0",
-    "@aws-sdk/util-dynamodb": "^3.978.0",
+    "@aws-sdk/client-dynamodb": "^3.980.0",
+    "@aws-sdk/lib-dynamodb": "^3.980.0",
+    "@aws-sdk/util-dynamodb": "^3.980.0",
     "@hono/zod-validator": "^0.7.6",
     "aws-cdk-lib": "2.236.0",
     "constructs": "^10.4.5",
@@ -47,5 +47,5 @@
     "uuid": "^13.0.0",
     "zod": "^4.3.6"
   },
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.28.2"
 }
