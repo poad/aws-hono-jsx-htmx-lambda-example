@@ -2,5 +2,7 @@ strictPeerDependencies: false
 
 overrides:
   fast-xml-parser@>=4.3.6 <=5.3.3: '>=5.3.4'
-  eslint: ">=10.0.0"
-  '@eslint/js': ">=10.0.0"
+  # eslint: ">=10.0.0"
+  # '@eslint/js': ">=10.0.0"
+  eslint: "^9"
+  '@eslint/js': "^9"
