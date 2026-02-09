@@ -51,7 +51,7 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@eslint/js':
-        specifier: ^9.39.2
+        specifier: ^9
         version: 9.39.2
       '@stylistic/eslint-plugin':
         specifier: ^5.7.1
@@ -69,7 +69,7 @@ importers:
         specifier: ^0.27.3
         version: 0.27.3
       eslint:
-        specifier: ^9.39.2
+        specifier: ^9
         version: 9.39.2(jiti@2.6.1)
       eslint-import-resolver-typescript:
         specifier: ^4.4.4
@@ -1139,8 +1139,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  bowser@2.13.1:
-    resolution: {integrity: sha512-OHawaAbjwx6rqICCKgSG0SAnT05bzd7ppyKLVUITZpANBaaMFBAsaNkto3LoQ31tyFP5kNujE8Cdx85G9VzOkw==}
+  bowser@2.14.1:
+    resolution: {integrity: sha512-tzPjzCxygAKWFOJP011oxFHs57HzIhOEracIgAePE4pqB3LikALKnSzUyU4MGs9/iCEUuHlAJTjTc5M+u7YEGg==}
 
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
@@ -2543,7 +2543,7 @@ snapshots:
     dependencies:
       '@aws-sdk/types': 3.973.1
       '@smithy/types': 4.12.0
-      bowser: 2.13.1
+      bowser: 2.14.1
       tslib: 2.8.1
 
   '@aws-sdk/util-user-agent-node@3.972.5':
@@ -3407,7 +3407,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  bowser@2.13.1: {}
+  bowser@2.14.1: {}
 
   brace-expansion@1.1.12:
     dependencies:
