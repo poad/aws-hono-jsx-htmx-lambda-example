@@ -51,7 +51,7 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@eslint/js':
-        specifier: ^9
+        specifier: ^9.39.2
         version: 9.39.2
       '@stylistic/eslint-plugin':
         specifier: ^5.8.0
@@ -63,13 +63,13 @@ importers:
         specifier: ^25.2.3
         version: 25.2.3
       aws-cdk:
-        specifier: ^2.1105.0
-        version: 2.1105.0
+        specifier: ^2.1106.0
+        version: 2.1106.0
       esbuild:
         specifier: ^0.27.3
         version: 0.27.3
       eslint:
-        specifier: ^9
+        specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
       eslint-import-resolver-typescript:
         specifier: ^4.4.4
@@ -1132,8 +1132,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1105.0:
-    resolution: {integrity: sha512-1RY2UZJv31XYobEGFHQEb7c2HXNzDbHuHqdnfdYyygvZW4Nrm8MJCW42lqItQCn+wF52Ixc7r2VR5eR4YGtVhA==}
+  aws-cdk@2.1106.0:
+    resolution: {integrity: sha512-1tyQNnuCnH3nc0QpOL84UNhr+y73fyS75nwSnuy5z7XtRwdsOuqyqcDxd6tvCXkUBA7fdgu8p1FR3hkqrW0GWA==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -3404,7 +3404,7 @@ snapshots:
       '@aws-cdk/cloud-assembly-schema': 48.20.0
       constructs: 10.4.5
 
-  aws-cdk@2.1105.0: {}
+  aws-cdk@2.1106.0: {}
 
   balanced-match@1.0.2: {}
 
