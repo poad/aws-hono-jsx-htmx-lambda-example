@@ -73,7 +73,7 @@ importers:
         specifier: ^8.10.161
         version: 8.10.161
       '@types/node':
-        specifier: ^24.12.2
+        specifier: ^24
         version: 24.12.2
       aws-cdk:
         specifier: ^2.1117.0
@@ -85,7 +85,7 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0(jiti@2.6.1)
       eslint-import-resolver-typescript:
-        specifier: ^4.4.4
+        specifier: '>=4'
         version: 4.4.4(eslint-plugin-import@2.32.0)(eslint@10.2.0(jiti@2.6.1))
       eslint-plugin-import:
         specifier: ^2.32.0
