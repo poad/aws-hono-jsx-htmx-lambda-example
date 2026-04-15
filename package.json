@@ -36,12 +36,12 @@
     "vitest": "^4.1.4"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.32.0",
+    "@aws-lambda-powertools/logger": "^2.33.0",
     "@aws-sdk/client-dynamodb": "^3.1030.0",
     "@aws-sdk/lib-dynamodb": "^3.1030.0",
     "@aws-sdk/util-dynamodb": "^3.996.2",
     "@hono/zod-validator": "^0.7.6",
-    "aws-cdk-lib": "2.249.0",
+    "aws-cdk-lib": "2.250.0",
     "constructs": "^10.6.0",
     "hono": "^4.12.12",
     "uuid": "^13.0.0",
