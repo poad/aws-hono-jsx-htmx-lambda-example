@@ -42,7 +42,7 @@
     "aws-cdk-lib": "^2.250.0",
     "constructs": "^10.6.0",
     "hono": "^4.12.14",
-    "uuid": "^13.0.0",
+    "uuid": "^14.0.0",
     "zod": "^4.3.6"
   },
   "packageManager": "pnpm@10.33.2"
