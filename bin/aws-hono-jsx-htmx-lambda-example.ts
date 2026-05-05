@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import * as cdk from 'aws-cdk-lib/core';
 import { AwsHonoJsxHtmxLambdaExampleStack } from '../lib/aws-hono-jsx-htmx-lambda-example-stack.js';
+import * as cdk from 'aws-cdk-lib/core';
 
 const app = new cdk.App();
 const stack = new AwsHonoJsxHtmxLambdaExampleStack(app, 'aws-hono-jsx-htmx-lambda-example-stack', {

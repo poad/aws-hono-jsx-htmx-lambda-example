@@ -1,10 +1,10 @@
+import { renderer, AddTodo, Item } from './components.js';
+import * as dynamodb from './dynamodb.js';
 import { zValidator } from '@hono/zod-validator';
 import { Hono } from 'hono';
 import { handle } from 'hono/aws-lambda';
 import { z } from 'zod';
 
-import { renderer, AddTodo, Item } from './components.js';
-import * as dynamodb from './dynamodb.js';
 
 interface Todo {
   title: string
