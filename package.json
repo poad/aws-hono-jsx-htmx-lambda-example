@@ -35,13 +35,13 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.33.0",
-    "@aws-sdk/client-dynamodb": "^3.1052.0",
-    "@aws-sdk/lib-dynamodb": "^3.1052.0",
+    "@aws-sdk/client-dynamodb": "^3.1053.0",
+    "@aws-sdk/lib-dynamodb": "^3.1053.0",
     "@aws-sdk/util-dynamodb": "^3.996.2",
     "@hono/zod-validator": "^0.8.0",
     "aws-cdk-lib": "^2.257.0",
     "constructs": "^10.6.0",
-    "hono": "^4.12.21",
+    "hono": "^4.12.22",
     "uuid": "^14.0.0",
     "zod": "^4.4.3"
   },

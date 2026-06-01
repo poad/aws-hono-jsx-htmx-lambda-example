@@ -20,17 +20,17 @@ importers:
         specifier: ^2.33.0
         version: 2.33.0
       '@aws-sdk/client-dynamodb':
-        specifier: ^3.1052.0
-        version: 3.1052.0
+        specifier: ^3.1053.0
+        version: 3.1053.0
       '@aws-sdk/lib-dynamodb':
-        specifier: ^3.1052.0
-        version: 3.1052.0(@aws-sdk/client-dynamodb@3.1052.0)
+        specifier: ^3.1053.0
+        version: 3.1053.0(@aws-sdk/client-dynamodb@3.1053.0)
       '@aws-sdk/util-dynamodb':
         specifier: ^3.996.2
-        version: 3.996.2(@aws-sdk/client-dynamodb@3.1052.0)
+        version: 3.996.2(@aws-sdk/client-dynamodb@3.1053.0)
       '@hono/zod-validator':
         specifier: ^0.8.0
-        version: 0.8.0(hono@4.12.21)(zod@4.4.3)
+        version: 0.8.0(hono@4.12.22)(zod@4.4.3)
       aws-cdk-lib:
         specifier: ^2.257.0
         version: 2.257.0(constructs@10.6.0)
@@ -38,8 +38,8 @@ importers:
         specifier: ^10.6.0
         version: 10.6.0
       hono:
-        specifier: ^4.12.21
-        version: 4.12.21
+        specifier: ^4.12.22
+        version: 4.12.22
       uuid:
         specifier: ^14.0.0
         version: 14.0.0
@@ -145,8 +145,8 @@ packages:
       '@middy/core':
         optional: true
 
-  '@aws-sdk/client-dynamodb@3.1052.0':
-    resolution: {integrity: sha512-KfAfnURP5EoODMOqf5kCdidmOipc557TJCNuwazU1UY3DcWbaDkKT/iT6pPq0o+C3pE5DJdLOLGBjXWTTbzDIQ==}
+  '@aws-sdk/client-dynamodb@3.1053.0':
+    resolution: {integrity: sha512-tZKxImLQIF4xbNHYWI7kZjZguM7Ne3k0U4dGH0iglauzKjGS1hr2/M5ec5xiZ0KP+B2d+zQlQQqwz3gec23p4Q==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.974.13':
@@ -193,11 +193,11 @@ packages:
     resolution: {integrity: sha512-itVdge0NozgtgmtbZ25FVwWU3vGlE7x7feE/aOEJNkQfEpbkrF8Rj1QmnK+2blFfYE1xWt/iU+6/jUp/pv1+MA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/lib-dynamodb@3.1052.0':
-    resolution: {integrity: sha512-EsmMUTdOjRvx3/KqRdDPrT0v4Vi7kmOXp6GHtwkGoRwPfW7gxITyNjtgCEhXyhiNt//wMpu/hEZpK9uPjfNQxA==}
+  '@aws-sdk/lib-dynamodb@3.1053.0':
+    resolution: {integrity: sha512-ErTR3HxkN1lKw8jqcJ7WDcypMDUL/EBKG47OF1xvts/piWqGDFSInW9KHYadFbajbfpZi14J3LzgERddASwm/w==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      '@aws-sdk/client-dynamodb': ^3.1052.0
+      '@aws-sdk/client-dynamodb': ^3.1053.0
 
   '@aws-sdk/middleware-endpoint-discovery@3.972.14':
     resolution: {integrity: sha512-wRIopAjPr4hUT1SnaM+pf4A3M90NjGDEMnmDf/rRN2P99sPRB/fnxllIVJcfAIwvFdK8nQLllYZt6V6k/5maBQ==}
@@ -1117,8 +1117,8 @@ packages:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
     engines: {node: '>=10.13.0'}
 
-  hono@4.12.21:
-    resolution: {integrity: sha512-uV63apnb0kyPtAUwoWgaGh9HyIFcv8lgmzPZSiTBQAFOFGIzka5EZ1dZocmGnn0XdX0+XTqJ6Tqv7selMuGLRQ==}
+  hono@4.12.22:
+    resolution: {integrity: sha512-7fvVPbB92zNRsQke+uiRGwtTuef0tB2Dg4hWxYfFNvkQhIltWoyi0ONReM5LWA+jJWS3nfT5lTq+qbsIpX0IQw==}
     engines: {node: '>=16.9.0'}
 
   ignore@5.3.2:
@@ -1580,7 +1580,7 @@ snapshots:
       '@aws-lambda-powertools/commons': 2.33.0
       '@aws/lambda-invoke-store': 0.2.4
 
-  '@aws-sdk/client-dynamodb@3.1052.0':
+  '@aws-sdk/client-dynamodb@3.1053.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -1702,11 +1702,11 @@ snapshots:
       mnemonist: 0.38.3
       tslib: 2.8.1
 
-  '@aws-sdk/lib-dynamodb@3.1052.0(@aws-sdk/client-dynamodb@3.1052.0)':
+  '@aws-sdk/lib-dynamodb@3.1053.0(@aws-sdk/client-dynamodb@3.1053.0)':
     dependencies:
-      '@aws-sdk/client-dynamodb': 3.1052.0
+      '@aws-sdk/client-dynamodb': 3.1053.0
       '@aws-sdk/core': 3.974.13
-      '@aws-sdk/util-dynamodb': 3.996.2(@aws-sdk/client-dynamodb@3.1052.0)
+      '@aws-sdk/util-dynamodb': 3.996.2(@aws-sdk/client-dynamodb@3.1053.0)
       '@smithy/core': 3.24.4
       '@smithy/types': 4.14.2
       tslib: 2.8.1
@@ -1754,9 +1754,9 @@ snapshots:
       '@smithy/types': 4.14.2
       tslib: 2.8.1
 
-  '@aws-sdk/util-dynamodb@3.996.2(@aws-sdk/client-dynamodb@3.1052.0)':
+  '@aws-sdk/util-dynamodb@3.996.2(@aws-sdk/client-dynamodb@3.1053.0)':
     dependencies:
-      '@aws-sdk/client-dynamodb': 3.1052.0
+      '@aws-sdk/client-dynamodb': 3.1053.0
       tslib: 2.8.1
 
   '@aws-sdk/util-locate-window@3.965.5':
@@ -1906,9 +1906,9 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@hono/zod-validator@0.8.0(hono@4.12.21)(zod@4.4.3)':
+  '@hono/zod-validator@0.8.0(hono@4.12.22)(zod@4.4.3)':
     dependencies:
-      hono: 4.12.21
+      hono: 4.12.22
       zod: 4.4.3
 
   '@humanfs/core@0.19.2':
@@ -2540,7 +2540,7 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  hono@4.12.21: {}
+  hono@4.12.22: {}
 
   ignore@5.3.2: {}
 
