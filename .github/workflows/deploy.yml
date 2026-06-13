@@ -27,13 +27,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6.2.0
-      with:
-        role-to-assume: ${{ env.OIDC_IAM_ROLE_ARN }}
-        role-session-name: GitHubActions
-        aws-region: ${{ env.AWS_REGION }}
-
     - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       with:
         persist-credentials: false
@@ -53,5 +46,12 @@ jobs:
             args: [--no-frozen-lockfile]
           - args: [--global, aws-cdk, esbuild]
 
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6.2.0
+      with:
+        role-to-assume: ${{ env.OIDC_IAM_ROLE_ARN }}
+        role-session-name: GitHubActions
+        aws-region: ${{ env.AWS_REGION }}
+
     - name: deploy
-      run: npx -y aws-cdk@latest deploy --require-approval=never
+      run: pnx aws-cdk@latest deploy --require-approval=never
