@@ -19,3 +19,4 @@ const stack = new AwsHonoJsxHtmxLambdaExampleStack(app, 'aws-hono-jsx-htmx-lambd
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
 cdk.RemovalPolicies.of(stack).destroy();
+cdk.Tags.of(stack).add('User', 'aws-hono-jsx-htmx-lambda-example');
