@@ -9,10 +9,14 @@ minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
   - pnpm@11.15.0
+  - hono@4.12.34
+  - brace-expansion@5.0.9
 
 overrides:
+  brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
   chokidar: '>=5'
   eslint-import-resolver-typescript: '^4.4.5'
+  hono@<4.12.34: ^4.12.34
   semver: '>=7'
 
 trustPolicy: no-downgrade
