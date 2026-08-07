@@ -38,7 +38,7 @@ jobs:
         check-latest: true
         package-manager-cache: false
 
-    - uses: pnpm/setup@v1
+    - uses: pnpm/setup@v2
       name: Install pnpm
 
     - name: Install global dependencies
