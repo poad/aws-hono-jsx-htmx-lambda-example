@@ -5,10 +5,9 @@ import { Hono } from 'hono';
 import { handle } from 'hono/aws-lambda';
 import { z } from 'zod';
 
-
 interface Todo {
-  title: string
-  id: string
+  title: string;
+  id: string;
 }
 
 const duration = Number(process.env.EXPIRE_IN_SEC || '300');
@@ -25,7 +24,7 @@ app.get('/', async (c) => {
       {todos.map((todo) => {
         return <Item title={todo.title} id={todo.id} />;
       })}
-      <div id="todo"></div>
+      <div id='todo'></div>
     </div>,
   );
 });
@@ -41,7 +40,11 @@ app.post(
   async (c) => {
     const { title } = c.req.valid('form');
     const id = crypto.randomUUID();
-    await dynamodb.put({title, id, expire: Math.floor(new Date().getTime() / 1000 + duration)});
+    await dynamodb.put({
+      title,
+      id,
+      expire: Math.floor(new Date().getTime() / 1000 + duration),
+    });
     return c.html(<Item title={title} id={id} />);
   },
 );

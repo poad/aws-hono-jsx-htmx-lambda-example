@@ -1,10 +1,10 @@
-import * as cdk from 'aws-cdk-lib/core';
-import { Construct } from 'constructs';
+import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
+import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as logs from 'aws-cdk-lib/aws-logs';
-import * as iam from 'aws-cdk-lib/aws-iam';
-import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
+import * as cdk from 'aws-cdk-lib/core';
+import { Construct } from 'constructs';
 
 export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -46,10 +46,12 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
         roleName: `${functionName}-role`,
         assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
         managedPolicies: [
-          iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole'),
+          iam.ManagedPolicy.fromAwsManagedPolicyName(
+            'service-role/AWSLambdaBasicExecutionRole',
+          ),
         ],
         inlinePolicies: {
-          'DynamoDBAccessPolicy': new iam.PolicyDocument({
+          DynamoDBAccessPolicy: new iam.PolicyDocument({
             statements: [
               new iam.PolicyStatement({
                 actions: [
@@ -59,10 +61,7 @@ export class AwsHonoJsxHtmxLambdaExampleStack extends cdk.Stack {
                   'dynamodb:GetItem',
                   'dynamodb:Query',
                 ],
-                resources: [
-                  todoTable.tableArn,
-                  `${todoTable.tableArn}/*`,
-                ],
+                resources: [todoTable.tableArn, `${todoTable.tableArn}/*`],
                 effect: iam.Effect.ALLOW,
               }),
             ],

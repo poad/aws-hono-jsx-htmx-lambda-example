@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "insertFinalNewline": true,
+  "sortImports": {
+    "partitionByNewline": true,
+    "newlinesBetween": false,
+    "groups": ["builtin", ["sibling", "parent"], "index"]
+  }
+}

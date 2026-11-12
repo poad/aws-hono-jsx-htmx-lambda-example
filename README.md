@@ -22,14 +22,14 @@ You can access to Lambda Function URL from AWS Management Console.
 
 This example provisions the following AWS resources:
 
-| Resource | Type | Name |
-| -------- | ---- | ---- |
-| CDK Stack | AWS CloudFormation | `aws-hono-jsx-htmx-lambda-example-stack` |
-| Lambda Function | AWS Lambda | `aws-hono-jsx-htmx-lambda` |
-| DynamoDB Table | Amazon DynamoDB | `aws-hono-jsx-htmx-lambda-example-todo` |
-| IAM Role | AWS Identity and Access Management (IAM) | `aws-hono-jsx-htmx-lambda-role` |
-| CloudWatch Log Group | Amazon CloudWatch | `/aws/lambda/aws-hono-jsx-htmx-lambda` |
-| Lambda Function URL | AWS Lambda | aws-hono-jsx-htmx-lambda Function URL |
+| Resource             | Type                                     | Name                                     |
+| -------------------- | ---------------------------------------- | ---------------------------------------- |
+| CDK Stack            | AWS CloudFormation                       | `aws-hono-jsx-htmx-lambda-example-stack` |
+| Lambda Function      | AWS Lambda                               | `aws-hono-jsx-htmx-lambda`               |
+| DynamoDB Table       | Amazon DynamoDB                          | `aws-hono-jsx-htmx-lambda-example-todo`  |
+| IAM Role             | AWS Identity and Access Management (IAM) | `aws-hono-jsx-htmx-lambda-role`          |
+| CloudWatch Log Group | Amazon CloudWatch                        | `/aws/lambda/aws-hono-jsx-htmx-lambda`   |
+| Lambda Function URL  | AWS Lambda                               | aws-hono-jsx-htmx-lambda Function URL    |
 
 ## Clean Up
 
